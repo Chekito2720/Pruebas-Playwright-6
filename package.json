@@ -1,0 +1,19 @@
+{
+  "name": "userinyerface-playwright",
+  "version": "1.0.0",
+  "description": "Suite de ~400 pruebas Playwright + TypeScript para https://userinyerface.com",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:all-browsers": "playwright test --project=chromium --project=firefox --project=webkit",
+    "report": "playwright show-report",
+    "count": "playwright test --list"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
